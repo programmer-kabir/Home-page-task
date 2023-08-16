@@ -6,7 +6,7 @@ const OurTeamMembers = ({ teamMember }) => {
     const { image, name, position, social_links } = teamMember;
 
     return (
-        <div className='shadow-md'>
+        <div className='shadow-md m-4'>
             <img className='w-[350px]' src={image} alt="" />
             <div className='flex justify-between items-center bg-slate-300 p-2'>
                 <div>

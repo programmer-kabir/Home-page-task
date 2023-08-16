@@ -17,7 +17,7 @@ const HelpFullTabs = () => {
 
 
     return (
-        <div>
+        <div className='w-[500px] lg:w-full'>
             <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                 <TabList>
                     <Tab>All</Tab>
@@ -28,28 +28,28 @@ const HelpFullTabs = () => {
                 </TabList>
 
                 <TabPanel>
-                    <div className='grid grid-cols-4 gap-2 w-full mt-20'>
+                    <div className='grid lg:grid-cols-4 grid-cols-1 gap-2 lg:w-full mx-auto w-[350px]  mt-20'>
                         {
                             categoryOne.map(item => <HelpFullTabsCard key={item.id} item={item}></HelpFullTabsCard>)
                         }
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <div className='grid grid-cols-4 gap-2 w-full mt-20'>
+                    <div className='grid lg:grid-cols-4 grid-cols-1 gap-2 lg:w-full mx-auto w-[350px]  mt-20'>
                         {
                             categoryTwo.map(item => <HelpFullTabsCard key={item.id} item={item}></HelpFullTabsCard>)
                         }
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <div className='grid grid-cols-4 gap-2 w-full mt-20'>
+                    <div className='grid lg:grid-cols-4 grid-cols-1 gap-2 lg:w-full mx-auto w-[350px]  mt-20'>
                         {
                             categoryThree.map(item => <HelpFullTabsCard key={item.id} item={item}></HelpFullTabsCard>)
                         }
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <div className='grid grid-cols-4 gap-2 w-full mt-20'>
+                    <div className='grid lg:grid-cols-4 grid-cols-1 gap-2 lg:w-full mx-auto w-[350px]  mt-20'>
                         {
                             categoryFour.map(item => <HelpFullTabsCard key={item.id} item={item}></HelpFullTabsCard>)
                         }

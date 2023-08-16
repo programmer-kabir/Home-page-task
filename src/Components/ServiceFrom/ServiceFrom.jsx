@@ -4,8 +4,8 @@ import Content from '../Content';
 const ServiceFrom = () => {
     return (
         <Content>
-            <div className='grid grid-cols-2 my-20 gap-20'>
-                <div className='h-[500px] w-full'>
+            <div className='grid lg:grid-cols-2 my-20 gap-20 lg:w-full w-[500px]'>
+                <div className='h-[500px] lg:w-full w-[400px] mx-auto'>
                     <h2 className='text-3xl font-semibold mb-5'>Get Quite for Service</h2>
                     <p>
                         The error message you're encountering "Cannot read properties of undefined reading 'filter" usually occurs when you're trying to perform

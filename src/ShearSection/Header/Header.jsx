@@ -105,7 +105,7 @@ const Header = () => {
 
         {/* Mobile dropdown menu */}
         {menuOpen && (
-          <nav className={`md:hidden mt-[80px] menu-slide ${menuOpen ? 'active' : ''}`}>
+          <nav className={`md:hidden mt-[10px] menu-slide ${menuOpen ? 'active' : ''}`}>
             <div className="absolute right-0 left-0 w-48 py-2 mt-2 bg-gray-100 rounded-md shadow-xl">
               <a
                 href="#"

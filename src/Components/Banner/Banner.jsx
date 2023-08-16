@@ -28,24 +28,33 @@ const Banner = () => {
     const boxInfoStyle = {
         position: 'relative', // Make sure BoxInfo has a positioned parent
         zIndex: 30,
-         // Adjust this value based on your layout needs
+        // Adjust this value based on your layout needs
     };
     return (
         <div>
             <div className='banner ' style={bannerStyle} >
                 <div style={overlayStyle}>
                     <Content >
-                        <div className='flex justify-between items-center h-[700px] ' >
-                            <div className='space-y-10 w-[60%]'>
-                                <h2 className='text-7xl font-semibold text-white'>Repair Offer The  best Home service </h2>
-                                <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aut, mollitia,
+
+                        <div className='lg:flex lg:justify-between items-center h-[700px] py5 lg:py-0 lg:px-0 px-5 '>
+                            <div className='  lg:w-[40%] w-[300px] 
+                            sm:h-[300px] lg:hidden justify-end '>
+                                <img className=' w-[300px] h-[300px] border-8 border-blue-400 rounded-full' src={rigtSide} alt="" />
+                            </div>
+                            <div className='space-y-10 lg:w-[60%] w-[40%] lg:pr-0 pr-5'>
+                                <h2 className='lg:text-7xl pt-5 text-4xl font-semibold text-white'>
+                                    Repair Offer The  best Home service 
+                                    </h2>
+                                <p className='text-white'>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aut, mollitia
 
                                 </p>
                                 <button className='btn bg-[#F25109] text-white p-2 px-5 rounded'>
                                     Contact us
                                 </button>
                             </div>
-                            <div className='w-[40%] flex justify-end'>
+                            <div className='hidden   lg:w-[40%] w-[300px] 
+                            sm:h-[300px] lg:flex justify-end '>
                                 <img className=' w-[400px] h-[400px] border-8 border-blue-400 rounded-full' src={rigtSide} alt="" />
                             </div>
                         </div>

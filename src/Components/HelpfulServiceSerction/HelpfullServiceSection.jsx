@@ -6,11 +6,16 @@ import Content from '../Content';
 const HelpfullServiceSection = () => {
     return (
         <Content>
-            <TitleSection title={'We Providing Helpfull Service'}></TitleSection>
+           <div className='lg:w-full w-[500px] '>
+           <div className='w-[400px] lg:w-full mx-auto '>
+                <TitleSection title={'We Providing Helpfull Service'}></TitleSection>
+            </div>
+
 
             <div>
                 <HelpFullTabs></HelpFullTabs>
             </div>
+           </div>
         </Content>
     );
 };

@@ -8,8 +8,8 @@ import ReviewSection from '../../Components/ReviewSection/ReviewSection';
 
 const Home = () => {
     return (
-        <div>
-            <Banner></Banner>
+        <div className='lg:overflow-auto overflow-y-auto'>
+            <Banner ></Banner>
             <ServiceSection></ServiceSection>
             <HelpfullServiceSection></HelpfullServiceSection>
             <ServiceFrom></ServiceFrom>

@@ -8,20 +8,25 @@ import ServiceBoxCard from '../ServiceBoxCard/ServiceBoxCard';
 
 const ServiceSection = () => {
     const [boxData] = ServiceData()
- 
+
     return (
         <Content >
-            <div className='text-center mt-20 mb-20'>
-            
-                    <TitleSection title={'Our Service To Explore'} subTitle={' whether the problem is specific to this component or if it'}></TitleSection>
-          
-            </div>
+            <div className='lg:w-full w-[500px]'>
+                <div className=' mt-20 mb-5 lg:w-full w-[300px] mx-auto'>
+
+                    <TitleSection title={'Our Service To Explore'}
+                    >
+                    </TitleSection>
+                    <p className='text-center'>whether the problem is specific to this component or if it</p>
+                </div>
 
 
-            <div className='grid grid-cols-4 gap-5'>
-                {
-                    boxData.map(singleData => <ServiceBoxCard key={singleData.id} singleData={singleData}></ServiceBoxCard>)
-                }
+                <div className='grid lg:grid-cols-4 lg:w-full
+     w-[300px] mx-auto gap-5'>
+                    {
+                        boxData.map(singleData => <ServiceBoxCard key={singleData.id} singleData={singleData}></ServiceBoxCard>)
+                    }
+                </div>
             </div>
         </Content>
     );
