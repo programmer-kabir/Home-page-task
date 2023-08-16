@@ -4,7 +4,10 @@ import Content from '../Content';
 const ServiceFrom = () => {
     return (
         <Content>
+            <div data-aos="fade-up"
+     data-aos-duration="2000">
             <div className='grid lg:grid-cols-2 my-20 gap-20 lg:w-full w-[500px]'>
+
                 <div className='h-[500px] lg:w-full w-[400px] mx-auto'>
                     <h2 className='text-3xl font-semibold mb-5'>Get Quite for Service</h2>
                     <p>
@@ -50,6 +53,7 @@ const ServiceFrom = () => {
                 </div>
                 <div  className='h-[500px] w-full'>
                     <img className='h-[400px] w-full' src="https://i.ibb.co/gmjqmM0/photo-1514432324607-a09d9b4aefdd.jpg" alt="" />
+                </div>
                 </div>
             </div>
         </Content>

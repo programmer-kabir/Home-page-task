@@ -12,8 +12,9 @@ const ServiceSection = () => {
     return (
         <Content >
             <div className='lg:w-full w-[500px]'>
-                <div className=' mt-20 mb-5 lg:w-full w-[300px] mx-auto'>
-
+                <div  className=' mt-20 mb-5 lg:w-full w-[300px] mx-auto'>
+                <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                     <TitleSection title={'Our Service To Explore'}
                     >
                     </TitleSection>
@@ -26,6 +27,7 @@ const ServiceSection = () => {
                     {
                         boxData.map(singleData => <ServiceBoxCard key={singleData.id} singleData={singleData}></ServiceBoxCard>)
                     }
+                    </div>
                 </div>
             </div>
         </Content>

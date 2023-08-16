@@ -9,6 +9,9 @@ const ReviewSection = () => {
     console.log(teamData);
     return (
         <Content>
+            {/* <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"> */}
+
             <div className='lg:w-full w-[600px]  '>
                 <div>
                     <TitleSection title={'Our Special Team Member'} subTitle={'The error message you re encountering Cannot read properties of undefined reading filter usually occurs when you re trying to perform'}></TitleSection>
@@ -20,6 +23,7 @@ const ReviewSection = () => {
                     }
                 </div>
             </div>
+            {/* </div> */}
         </Content>
     );
 };

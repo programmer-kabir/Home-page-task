@@ -7,6 +7,7 @@ const OurTeamMembers = ({ teamMember }) => {
 
     return (
         <div className='shadow-md m-4'>
+            <div data-aos="zoom-out-up">
             <img className='w-[350px]' src={image} alt="" />
             <div className='flex justify-between items-center bg-slate-300 p-2'>
                 <div>
@@ -20,6 +21,7 @@ const OurTeamMembers = ({ teamMember }) => {
                         <li><FaTwitterSquare></FaTwitterSquare></li>
                     </ul>
                 </div>
+            </div>
             </div>
         </div>
     );
